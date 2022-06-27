@@ -1,8 +1,7 @@
 arr=int(input())
 list1=list(map(int,input().split()))
 list1.sort()
-list2=[0]*100
-for i in range(0,arr):
-    a=list1[i]
-    list2[a]+=1
-print(*list2, sep=" ")
+for i in range(0,100):
+    a=list1.count(i)
+    print(a,end=" ")
+
